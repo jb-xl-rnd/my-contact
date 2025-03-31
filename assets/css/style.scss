@@ -3,22 +3,42 @@
 
 @import "{{ site.theme }}";
 
-/* Target the specific elements in the midnight theme */
-body header {
+/* Hide the View on GitHub button */
+.btn, #banner {
   display: none !important;
 }
 
-/* Target the divider */
-div.clear {
+/* Hide the title and subtitle */
+h1#project_title, h2#project_tagline {
   display: none !important;
 }
 
-/* Remove top spacing */
-div.wrapper {
+/* Hide the header completely */
+#header_wrap {
+  display: none !important;
+}
+
+/* Hide the project footer info */
+span.site-footer-owner, span.site-footer-credits, footer p {
+  display: none !important;
+}
+
+/* For Midnight theme specifically */
+#header {
+  display: none !important;
+}
+
+/* Hide the dotted line */
+#title hr {
+  display: none !important;
+}
+
+/* Hide project info */
+#title .credits {
+  display: none !important;
+}
+
+/* Remove top margin */
+section {
   margin-top: 0 !important;
-}
-
-/* Remove the View on GitHub button */
-#banner {
-  display: none !important;
 }
