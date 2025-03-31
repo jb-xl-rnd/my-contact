@@ -3,42 +3,28 @@
 
 @import "{{ site.theme }}";
 
-/* Hide the View on GitHub button */
-.btn, #banner {
+/* Hide the header elements we're still seeing */
+#title h1, #title p {
   display: none !important;
 }
 
-/* Hide the title and subtitle */
-h1#project_title, h2#project_tagline {
+/* Hide the title area completely */
+#title {
   display: none !important;
 }
 
-/* Hide the header completely */
-#header_wrap {
-  display: none !important;
-}
-
-/* Hide the project footer info */
-span.site-footer-owner, span.site-footer-credits, footer p {
-  display: none !important;
-}
-
-/* For Midnight theme specifically */
-#header {
-  display: none !important;
-}
-
-/* Hide the dotted line */
-#title hr {
-  display: none !important;
-}
-
-/* Hide project info */
-#title .credits {
-  display: none !important;
-}
-
-/* Remove top margin */
-section {
+/* For specific theme elements */
+.container {
   margin-top: 0 !important;
+}
+
+/* Remove all padding at the top */
+body {
+  padding-top: 0 !important;
+}
+
+/* Try to target anything with 'my-contact' text */
+h1:contains("my-contact"), 
+p:contains("Website Reference") {
+  display: none !important;
 }
