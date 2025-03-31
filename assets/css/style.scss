@@ -3,28 +3,22 @@
 
 @import "{{ site.theme }}";
 
-/* Remove the entire header section */
-#header {
+/* Target the specific elements in the midnight theme */
+body header {
   display: none !important;
 }
 
-/* Remove the divider line */
-hr, .dotted {
+/* Target the divider */
+div.clear {
   display: none !important;
 }
 
-/* If you want to keep the header but make it smaller */
-/*
-#header {
-  padding: 10px 0 !important;
+/* Remove top spacing */
+div.wrapper {
+  margin-top: 0 !important;
 }
 
-#header h1 {
-  font-size: 18px !important;
-  margin-bottom: 5px !important;
+/* Remove the View on GitHub button */
+#banner {
+  display: none !important;
 }
-
-.header {
-  font-size: 12px !important;
-}
-*/
