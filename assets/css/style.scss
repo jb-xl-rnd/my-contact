@@ -3,28 +3,27 @@
 
 @import "{{ site.theme }}";
 
-/* Hide the header elements we're still seeing */
-#title h1, #title p {
-  display: none !important;
-}
-
-/* Hide the title area completely */
+/* Hide the title elements */
 #title {
   display: none !important;
 }
 
-/* For specific theme elements */
-.container {
-  margin-top: 0 !important;
+/* Specifically hide the View on GitHub button */
+.btn, #banner, a.button {
+  display: none !important;
 }
 
-/* Remove all padding at the top */
-body {
-  padding-top: 0 !important;
+/* More specific selector for the green button */
+a[href*="github.com"] {
+  display: none !important;
 }
 
-/* Try to target anything with 'my-contact' text */
-h1:contains("my-contact"), 
-p:contains("Website Reference") {
+/* Target the button container too */
+.downloads {
+  display: none !important;
+}
+
+/* Hide any remaining buttons in the header */
+header a, header .button {
   display: none !important;
 }
