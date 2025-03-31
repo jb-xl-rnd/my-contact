@@ -1,0 +1,30 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Remove the entire header section */
+#header {
+  display: none !important;
+}
+
+/* Remove the divider line */
+hr, .dotted {
+  display: none !important;
+}
+
+/* If you want to keep the header but make it smaller */
+/*
+#header {
+  padding: 10px 0 !important;
+}
+
+#header h1 {
+  font-size: 18px !important;
+  margin-bottom: 5px !important;
+}
+
+.header {
+  font-size: 12px !important;
+}
+*/
