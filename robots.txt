@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jonathanbeer.me/sitemap.xml
+
+# LLM-friendly content
+# See https://llmstxt.org/
+User-agent: GPTBot
+Allow: /llms.txt
+
+User-agent: ChatGPT-User
+Allow: /llms.txt
+
+User-agent: Claude-Web
+Allow: /llms.txt

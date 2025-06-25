@@ -1,0 +1,27 @@
+# Jonathan Beer
+
+> Developer and physicist specializing in prototyping, startup consulting, AI integration, and technical project management. Expert in Raspberry Pi, Linux, Ansible, and game development.
+
+I'm a developer/physicist who loves to solve hard problems & build prototypes. I specialize in bridging the gap between complex technical challenges and practical solutions, with extensive experience in both individual contributor and leadership roles.
+
+## Technical Expertise
+
+- **Raspberry Pi**: Embedded systems and IoT prototyping
+- **Linux**: System administration and automation  
+- **AI Integration**: Machine learning implementation and deployment
+- **Ansible**: Infrastructure automation and configuration management
+
+## Services
+
+- **Startup Consulting**: Strategic technical guidance for early-stage companies, helping navigate technology decisions and architecture planning
+- **Startup Strategy & Planning**: Business strategy development with a technical focus, bridging the gap between technical feasibility and market opportunity
+- **Project Management**: Technical project leadership with expertise in agile methodologies and cross-functional team coordination
+- **Game Development**: Interactive software development with focus on performance optimization and user experience
+
+## Contact
+
+**Location**: Morristown, NJ 07960  
+**Professional Inquiries**: jb@[company].com  
+**Urgent/Referrals**: Contact through Red Oaks network
+
+Available for consulting engagements and technical advisory roles.
