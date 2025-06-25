@@ -1,0 +1,29 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Hide the title elements */
+#title {
+  display: none !important;
+}
+
+/* Specifically hide the View on GitHub button */
+.btn, #banner, a.button {
+  display: none !important;
+}
+
+/* More specific selector for the green button */
+a[href*="github.com"] {
+  display: none !important;
+}
+
+/* Target the button container too */
+.downloads {
+  display: none !important;
+}
+
+/* Hide any remaining buttons in the header */
+header a, header .button {
+  display: none !important;
+}
