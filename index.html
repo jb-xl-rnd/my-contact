@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jonathan Beer — Developer / Physicist</title>
+<meta name="description" content="Jonathan Beer — developer, physicist, and consultant for startups. Prototypes, strategy, and hard problems." />
+<meta property="og:title" content="Jonathan Beer — Developer / Physicist" />
+<meta property="og:description" content="Independent consultant helping startups figure out what to build, and then building it." />
+<meta property="og:url" content="https://jonathanbeer.me/" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:       #0E0E0E;
+    --ink:      #E8E6E1;
+    --ink-soft: #B5B1AA;
+    --ink-mute: #6E6A63;
+    --paper:    #161616;
+    --rule:     #E8E6E1;
+    --accent:   oklch(62% 0.14 42);
+    --sans: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--ink); }
+  body {
+    font-family: var(--mono);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.55;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  a { color: var(--ink); text-decoration: none; border-bottom: 1px solid color-mix(in oklch, var(--ink) 25%, transparent); transition: border-color .15s, color .15s; }
+  a:hover { border-bottom-color: var(--accent); color: var(--accent); }
+  ::selection { background: var(--accent); color: var(--bg); }
+
+  .page { max-width: 880px; margin: 0 auto; padding: 72px 40px 120px; position: relative; }
+
+  /* ---------------- Header ---------------- */
+  .topbar {
+    display: flex; justify-content: space-between; align-items: baseline;
+    font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em;
+    color: var(--ink-mute); text-transform: uppercase;
+    padding-bottom: 28px; border-bottom: 1px solid color-mix(in oklch, var(--ink) 12%, transparent);
+  }
+  .topbar .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; vertical-align: middle; margin-right: 8px; animation: pulse 2.4s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .topbar a { border: none; color: var(--ink-mute); }
+  .topbar a:hover { color: var(--accent); }
+  .topbar nav { display: flex; gap: 22px; }
+
+  /* ---------------- Hero ---------------- */
+  .hero { padding: 88px 0 64px; }
+  .kicker {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin-bottom: 24px;
+  }
+  .kicker span.accent { color: var(--accent); }
+  h1.name {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: clamp(36px, 5.2vw, 64px);
+    line-height: 1.05;
+    letter-spacing: -0.01em;
+    margin: 0 0 20px;
+    text-wrap: balance;
+  }
+  h1.name::before { content: "$ "; color: var(--accent); }
+  h1.name em { font-style: normal; color: var(--accent); font-weight: 500; }
+  .tagline {
+    font-family: var(--mono);
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-soft);
+    max-width: 620px;
+    margin: 0 0 40px;
+    text-wrap: pretty;
+  }
+  .hero-meta {
+    display: flex; flex-wrap: wrap; gap: 28px;
+    font-family: var(--mono); font-size: 13px; color: var(--ink-mute);
+    padding-top: 28px;
+    border-top: 1px solid color-mix(in oklch, var(--ink) 12%, transparent);
+  }
+  .hero-meta b { color: var(--ink); font-weight: 500; }
+
+  /* ---------------- Sections ---------------- */
+  section.block {
+    padding: 56px 0;
+    border-top: 1px solid color-mix(in oklch, var(--ink) 12%, transparent);
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  section.block h2 {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-mute);
+    margin: 10px 0 0;
+    position: sticky;
+    top: 24px;
+  }
+  section.block h2::before {
+    content: "§ ";
+    color: var(--accent);
+  }
+  section.block .content { max-width: 620px; }
+  section.block p.lede {
+    font-family: var(--mono);
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 0 24px;
+    color: var(--ink);
+    text-wrap: pretty;
+  }
+  section.block p { margin: 0 0 16px; color: var(--ink-soft); }
+  section.block p:last-child { margin-bottom: 0; }
+
+  /* Tags row */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .tag {
+    font-family: var(--mono);
+    font-size: 12px;
+    padding: 6px 12px;
+    border: 1px solid color-mix(in oklch, var(--ink) 20%, transparent);
+    border-radius: 999px;
+    color: var(--ink-soft);
+    background: transparent;
+    transition: all .2s;
+  }
+  .tag:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  /* Working-on list */
+  .work-list { list-style: none; padding: 0; margin: 0; }
+  .work-list li {
+    display: grid;
+    grid-template-columns: 32px 1fr auto;
+    align-items: baseline;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px dashed color-mix(in oklch, var(--ink) 15%, transparent);
+    font-family: var(--mono);
+    font-size: 14px;
+    line-height: 1.3;
+  }
+  .work-list li:last-child { border-bottom: none; }
+  .work-list .idx { font-family: var(--mono); font-size: 11px; color: var(--ink-mute); letter-spacing: 0.05em; }
+  .work-list .status { font-family: var(--mono); font-size: 11px; color: var(--ink-mute); text-transform: uppercase; letter-spacing: 0.1em; }
+  .work-list .status.active { color: var(--accent); }
+  .work-list .status.active::before { content: "● "; }
+
+  /* Contact riddle */
+  .riddle {
+    padding: 20px 0 8px;
+  }
+  .riddle .hint {
+    font-family: var(--mono);
+    font-size: 15px;
+    line-height: 1.45;
+    color: var(--ink);
+    margin: 0 0 16px;
+    text-wrap: pretty;
+  }
+  .riddle .hint .blank {
+    display: inline-block;
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    padding: 0 6px;
+    font-style: italic;
+  }
+  .riddle .mono-note {
+    font-family: var(--mono);
+    font-size: 13px;
+    color: var(--ink-mute);
+    line-height: 1.6;
+    padding: 16px;
+    border: 1px dashed color-mix(in oklch, var(--ink) 20%, transparent);
+    background: color-mix(in oklch, var(--bg) 70%, transparent);
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  .riddle .mono-note .prompt { color: var(--accent); user-select: none; }
+  .riddle .mono-note .comment { color: var(--ink-mute); opacity: 0.7; }
+
+  /* ---------------- Footer ---------------- */
+  footer.foot {
+    margin-top: 80px;
+    padding-top: 28px;
+    border-top: 1px solid color-mix(in oklch, var(--ink) 12%, transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--ink-mute);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  footer.foot a { border: none; color: var(--ink-mute); }
+  footer.foot a:hover { color: var(--accent); }
+
+  @media (max-width: 640px) {
+    .page { padding: 40px 22px 80px; }
+    section.block { grid-template-columns: 1fr; gap: 16px; }
+    section.block h2 { position: static; }
+    .hero { padding: 56px 0 40px; }
+    .topbar nav { gap: 14px; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="topbar">
+      <div><span class="dot"></span>Available · Q2 2026</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#stack">Stack</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="kicker"><span class="accent">◈</span>&nbsp;&nbsp;<b style="color: var(--ink); font-weight: 500;">Jonathan Beer</b> — <em>Developer · Physicist · Consultant</em></div>
+      <h1 class="name">Hard problems,<br/>shipped as <em>prototypes</em>.</h1>
+      <p class="tagline">Independent consultant. I help startups turn research papers, rough ideas, and maybes into working prototypes you can put in front of users.</p>
+      <div class="hero-meta">
+        <div><b>Based</b> &nbsp;remote</div>
+        <div><b>Specialty</b> &nbsp;research paper → working prototype</div>
+        <div><b>Working with</b> &nbsp;seed–Series&nbsp;A founders</div>
+      </div>
+    </section>
+
+    <section class="block" id="about">
+      <h2>About</h2>
+      <div class="content">
+        <p class="lede">I'm a developer and physicist. My sweet spot is the stretch between "here's an interesting research paper" and "here's a prototype you can put in front of a user."</p>
+        <p>The work is usually some mix of asking better questions, cutting scope in half twice, and writing enough code to make the question answerable. A decade moving between research and product means I can read the paper, pressure-test the business case, and write the glue that turns one into the other.</p>
+        <p>If you have a hard problem and a short runway, we'll probably get along.</p>
+      </div>
+    </section>
+
+    <section class="block" id="stack">
+      <h2>Stack</h2>
+      <div class="content">
+        <p class="lede">Tools I reach for most often, organised by how much of my day they take up.</p>
+        <div class="tags">
+          <span class="tag">Raspberry Pi</span>
+          <span class="tag">Linux / Ansible</span>
+          <span class="tag">AI integration</span>
+          <span class="tag">Python</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">GameDev</span>
+          <span class="tag">Embedded</span>
+        </div>
+        <p style="margin-top: 24px;">Generalist by necessity, not by choice — small teams reward people who can move between layers without waiting for a handoff.</p>
+      </div>
+    </section>
+
+    <section class="block" id="work">
+      <h2>What I do</h2>
+      <div class="content">
+        <p class="lede">Four things, roughly in order of how much I charge for them.</p>
+        <ul class="work-list">
+          <li>
+            <span class="idx">01</span>
+            <span>Consulting for startups</span>
+            <span class="status active">Active</span>
+          </li>
+          <li>
+            <span class="idx">02</span>
+            <span>Startup strategy &amp; planning</span>
+            <span class="status active">Active</span>
+          </li>
+          <li>
+            <span class="idx">03</span>
+            <span>Project management</span>
+            <span class="status">Selective</span>
+          </li>
+          <li>
+            <span class="idx">04</span>
+            <span>Game development</span>
+            <span class="status">For fun</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="block" id="contact">
+      <h2>Contact</h2>
+      <div class="content riddle">
+        <p class="hint">You can reach me at <span class="blank">jb</span> @ <span class="blank">one of the startups I'm working on</span> <span style="color: var(--ink-mute);">. com</span></p>
+        <p style="color: var(--ink-soft);">If you really need to reach me, bother <b style="color: var(--ink);">Noga</b> at Red Oaks.</p>
+        <div class="mono-note">
+          <div><span class="prompt">&gt;</span> solve_puzzle --hint="intersection of portfolio and inbox"</div>
+          <div><span class="comment"># if you're consulting-curious, the hint is enough.</span></div>
+          <div><span class="comment"># if you're recruiting — bother Noga.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <div>© 2026 · Jonathan Beer</div>
+      <div>
+        <a href="https://github.com/jb-xl-rnd/my-contact" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
