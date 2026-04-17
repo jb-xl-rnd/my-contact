@@ -1,27 +1,41 @@
 # Jonathan Beer
 
-> Developer and physicist specializing in prototyping, startup consulting, AI integration, and technical project management. Expert in Raspberry Pi, Linux, Ansible, and game development.
+> Developer and physicist. Independent consultant helping startups turn research papers, rough ideas, and maybes into working prototypes you can put in front of users.
 
-I'm a developer/physicist who loves to solve hard problems & build prototypes. I specialize in bridging the gap between complex technical challenges and practical solutions, with extensive experience in both individual contributor and leadership roles.
+My sweet spot is the stretch between "here's an interesting research paper" and "here's a prototype you can put in front of a user." The work is usually some mix of asking better questions, cutting scope in half twice, and writing enough code to make the question answerable. A decade moving between research and product means I can read the paper, pressure-test the business case, and write the glue that turns one into the other.
 
-## Technical Expertise
+If you have a hard problem and a short runway, we'll probably get along.
 
-- **Raspberry Pi**: Embedded systems and IoT prototyping
-- **Linux**: System administration and automation  
-- **AI Integration**: Machine learning implementation and deployment
-- **Ansible**: Infrastructure automation and configuration management
+## Stack
 
-## Services
+Tools I reach for most often:
 
-- **Startup Consulting**: Strategic technical guidance for early-stage companies, helping navigate technology decisions and architecture planning
-- **Startup Strategy & Planning**: Business strategy development with a technical focus, bridging the gap between technical feasibility and market opportunity
-- **Project Management**: Technical project leadership with expertise in agile methodologies and cross-functional team coordination
-- **Game Development**: Interactive software development with focus on performance optimization and user experience
+- **Raspberry Pi** — embedded systems and IoT prototyping
+- **Linux / Ansible** — system administration and infrastructure automation
+- **AI integration** — applying models to real product problems
+- **Python** — primary language for research and backend work
+- **TypeScript** — primary language for product and frontend work
+- **Prototyping** — fast, scrappy builds to test whether an idea works
+- **GameDev** — for fun
+- **Embedded** — when the prototype lives outside a browser
+
+## What I do
+
+Four things, roughly in order of how much I charge for them:
+
+1. **Consulting for startups** — active
+2. **Startup strategy & planning** — active
+3. **Project management** — selective
+4. **Game development** — for fun
+
+## Working with
+
+Seed–Series A founders. Remote.
 
 ## Contact
 
-**Location**: Morristown, NJ 07960  
-**Professional Inquiries**: jb@[company].com  
-**Urgent/Referrals**: Contact through Red Oaks network
+**Location**: Morristown, NJ 07960
+**Professional inquiries**: jb@[one of the startups I'm working on].com
+**Urgent / referrals**: Contact through Noga at Red Oaks
 
-Available for consulting engagements and technical advisory roles.
+Available Q2 2026 for consulting engagements and technical advisory roles.
