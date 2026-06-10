@@ -1,38 +1,24 @@
 # Jonathan Beer — Developer / Physicist
 
-> Available · Q2 2026
-
-◈ **Jonathan Beer** — *Developer · Physicist · Consultant*
+> ● Available Q2 2026
 
 ## $ Hard problems, shipped as *prototypes*.
 
-Independent consultant. I help startups turn research papers, rough ideas, and maybes into working prototypes you can put in front of users.
-
-- **Based** — remote
-- **Specialty** — research paper → working prototype
-- **Working with** — seed–Series A founders
+Independent consultant. I work remote with seed–Series A founders, turning research papers and rough ideas into working prototypes you can put in front of users.
 
 ---
 
-## § About
+## About
 
-I'm a developer and physicist. My sweet spot is the stretch between "here's an interesting research paper" and "here's a prototype you can put in front of a user."
-
-The work is usually some mix of asking better questions, cutting scope in half twice, and writing enough code to make the question answerable. A decade moving between research and product means I can read the paper, pressure-test the business case, and write the glue that turns one into the other.
+A decade between research and product. My sweet spot is the stretch between "here's an interesting paper" and "here's a prototype you can put in front of a user" — asking better questions, cutting scope in half twice, and writing enough code to make the question answerable.
 
 If you have a hard problem and a short runway, we'll probably get along.
 
-## § Stack
-
-Tools I reach for most often, organised by how much of my day they take up.
+## Stack
 
 `Raspberry Pi` · `Linux / Ansible` · `AI integration` · `Python` · `TypeScript` · `Prototyping` · `GameDev` · `Embedded`
 
-Generalist by necessity, not by choice — small teams reward people who can move between layers without waiting for a handoff.
-
-## § What I do
-
-Four things, roughly in order of how much I charge for them.
+## What I do
 
 | # | | Status |
 |---|---|---|
@@ -41,17 +27,11 @@ Four things, roughly in order of how much I charge for them.
 | 03 | Project management | Selective |
 | 04 | Game development | For fun |
 
-## § Contact
+## Contact
 
-You can reach me at **jb** @ **one of the startups I'm working on** . com
+Reach me at **jb** @ **one of the startups I'm working on** . com
 
 If you really need to reach me, bother **Noga** at Red Oaks.
-
-```
-> solve_puzzle --hint="intersection of portfolio and inbox"
-# if you're consulting-curious, the hint is enough.
-# if you're recruiting — bother Noga.
-```
 
 ---
 
